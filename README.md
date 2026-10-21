@@ -1,5 +1,3 @@
-直接复制下面内容，粘贴到 GitHub 的 README 编辑器即可（或存成 README.md 放进仓库）：
-markdown
 # MobileViTv3-DSR
 
 融合**差分注意力（Differential Attention, DA）**与**空间缩减注意力（Spatial Reduction Attention, SRA）**的改进 MobileViTv3 轻量级交通标志分类模型，面向复杂街景场景实现鲁棒识别。
