@@ -1,0 +1,25 @@
+{
+  "variant": "dsr",
+  "best_val_acc": 0.9991228070175439,
+  "params": 3614196,
+  "checkpoint": "runs\\dsr\\best.pth",
+  "history": "runs\\dsr\\metrics.csv",
+  "val_accuracy": 0.9991228070175439,
+  "val_macro": {
+    "accuracy": 0.9995614035087719,
+    "precision": 0.9990774907749078,
+    "recall": 0.9991666666666666,
+    "f1": 0.9991205305206768,
+    "specificity": 0.9997126436781609,
+    "auc": 0.9999928388980113
+  },
+  "test_accuracy": 0.9982456140350877,
+  "test_macro": {
+    "accuracy": 0.9991228070175437,
+    "precision": 0.9982758620689656,
+    "recall": 0.9981875492513791,
+    "f1": 0.9982270764709222,
+    "specificity": 0.9994131455399061,
+    "auc": 0.9999968071519796
+  }
+}

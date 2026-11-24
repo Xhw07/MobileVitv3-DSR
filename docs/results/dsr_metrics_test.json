@@ -1,0 +1,86 @@
+{
+  "overall_accuracy": 0.9982456140350877,
+  "macro": {
+    "accuracy": 0.9991228070175437,
+    "precision": 0.9982758620689656,
+    "recall": 0.9981875492513791,
+    "f1": 0.9982270764709222,
+    "specificity": 0.9994131455399061,
+    "auc": 0.9999968071519796
+  },
+  "per_class": [
+    {
+      "class": "No overtaking (trucks)",
+      "accuracy": 0.9991228070175439,
+      "precision": 1.0,
+      "recall": 0.9962962962962963,
+      "f1": 0.9981447124304267,
+      "specificity": 1.0,
+      "auc": 0.9999872286079182,
+      "support": 270
+    },
+    {
+      "class": "Priority road",
+      "accuracy": 0.9991228070175439,
+      "precision": 1.0,
+      "recall": 0.9964539007092199,
+      "f1": 0.9982238010657194,
+      "specificity": 1.0,
+      "auc": 1.0,
+      "support": 282
+    },
+    {
+      "class": "Speed Limit 30",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "specificity": 1.0,
+      "auc": 1.0,
+      "support": 300
+    },
+    {
+      "class": "Yield",
+      "accuracy": 0.9982456140350877,
+      "precision": 0.993103448275862,
+      "recall": 1.0,
+      "f1": 0.9965397923875432,
+      "specificity": 0.9976525821596244,
+      "auc": 1.0,
+      "support": 288
+    }
+  ],
+  "confusion_matrix": [
+    [
+      269,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      281,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      300,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      288
+    ]
+  ],
+  "class_names": [
+    "No overtaking (trucks)",
+    "Priority road",
+    "Speed Limit 30",
+    "Yield"
+  ],
+  "num_samples": 1140
+}
