@@ -40,11 +40,11 @@ Input → Stem(/2) → Stage1 → Stage2 → Stage3 → GAP → LayerNorm → FC
 
 批归一化后的图像经 Stem 提取边缘/形状/颜色特征，再由三个阶段（步长 2 下采样）提取多尺度特征。每个 MobileViTBlock 同时建模局部与全局信息，最后经全局平均池化、层归一化与线性分类头输出 4 类概率。
 
-![整体框架](docs/figures/architecture.png)
+
 
 **空间缩减注意力（SRA）**：查询取自完整 token 序列，键/值先经 `sr_ratio` 步长卷积做空间缩减，注意力在 `N × N'` 上计算。缩减后的尺寸直接取自卷积真实输出，不做整除假设；模块以残差方式注入 token 流。
 
-![SRA](docs/figures/sra.png)
+
 
 **差分注意力（DA）**：
 
@@ -54,7 +54,6 @@ $$
 
 `Q_off` 由零初始化的线性层产生（可学习偏移查询，训练起点等价于恒等映射），`λ` 为每个注意力头独立可学习的标量。差分后的负响应被截断并重新归一化，保证聚合数值稳定。
 
-![DA](docs/figures/da.png)
 
 **其他改动**：卷积与 MLP 中的 SiLU 统一替换为 GELU；全局分支沿用 MobileViT 的 unfold/fold，按 2×2 不重叠分块把 token 数降到 1/4，避免高分辨率阶段的注意力开销。
 
